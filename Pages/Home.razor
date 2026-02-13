@@ -1,0 +1,26 @@
+﻿@page "/"
+
+<h1>VD2App Startseite (Web-Test)</h1>
+
+<p>Hier wird später deine App-Oberfläche simuliert.</p>
+
+<button @onclick="OnTestClick">Test Button</button>
+<button @onclick="OnSecondClick" style="margin-left:10px;">
+    Zweiter Button
+</button>
+
+<p>@Message</p>
+
+@code {
+    private string Message = "";
+
+    private void OnTestClick()
+    {
+        Message = "Der erste Button funktioniert!";
+    }
+
+    private void OnSecondClick()
+    {
+        Message = "Jetzt wurde der zweite Button geklickt!";
+    }
+}
